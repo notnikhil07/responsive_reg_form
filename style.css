@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+      font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: 	#f3f4f6;
+    width: 100%;
+}
+
+
+.container{
+    text-align: center;
+    /* background-color: blue; */
+    height: 100vh;
+    /* width: 100%; */
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.title{
+      display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+    /* max-width: 600px; */
+    /* padding: 20px; */
+    background-color: white;
+    /* margin: 0 auto; */
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+    /* position: relative; */
+    margin: 10px;
+
+}
+.title1{
+  /* max-width: 600px; */
+    padding: 20px;
+    background-color: white;
+    /* margin: 0 auto; */
+    /* box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1); */
+    border-radius: 10px;
+    /* position: relative; */
+    /* width: 100%; */
+    margin: 10px;
+
+}
+.dec{
+    background-color: yellow;
+    height: 10px;
+    width: 100%;
+    /* margin-top: -20px; */
+    border-bottom: 30px;
+}
+.email, .password, .re_password{
+    margin-top: 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.email img,.password img, .re_password img,.first_name img, .last_name img{
+    padding: 4px;
+    height: 33px;
+    width: 30px;
+    border: 1px solid #d1d5db;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.email input,.password input, .re_password input {
+    height: 33px;
+    width: 500px;
+    padding: 5px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.first_name{
+    margin-top: 8px;
+    /* width: 60px; */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.first_name input, .last_name input{
+    border: 1px solid #d1d5db;
+    width: 220px;
+    padding: 5px;
+    outline: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+
+.nameinput{
+    display: flex;
+    
+}
+.register{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center ;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0px 10px 0px; 
+    border-radius: 6px;
+    
+}
+
+.gender{
+    margin-top: 5px;
+    display: flex;
+    gap: 30px;
+}
+
+.country{
+    margin-top: 10px;
+}
+
+.country select{
+    width: 100%;
+    height: 33px;
+}
+/* .privacy_policy{
+    margin-top: 10px;
+} */
+.policy1, .policy2{
+    margin-top: 10px;
+
+    gap: 5px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+
+}
+.register:hover{
+    background-color: #facc15;
+    color: black;
+    transition: all 0.6s ease-in-out;
+
+}
+
+/* Extra small devices (phones, less than 480px) */
+@media (min-width: 300px) {
+  
+    .first_name input, .last_name input{
+    border: 1px solid #d1d5db;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    }
+
+    
+  .email input, .password input, .re_password input {
+    width: 300px;
+  }
+
+  
+
+}
+
+/* Tablet and above */
+@media (min-width: 600px) {
+
+   
+    .first_name {
+        flex-direction: row;
+    }
+
+    /* .first_name input, .last_name input {
+        width: 100px;
+    } */
+
+    
+
+
+    .email input, .password input, .re_password input {
+        width: 400px;
+    }
+
+    .title, .title1 {
+        max-width: 600px;
+    }
+}
+
+/* Desktop and above */
+@media ( min-width: 900px) {
+
+    .email input, .password input, .re_password input {
+        width: 500px;
+    }
+
+
+
+    .title, .title1 {
+        max-width: 700px;
+    }
+}
